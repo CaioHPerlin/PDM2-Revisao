@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão | Programação para dispositivos móveis 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 id="subject-title">Programação para Dispositivos Móveis 2</h1>
+        <nav>
+            <ul>
+                <li><a href="#e1">Exercício 1</a></li>
+                <li><a href="#e2">Exercício 2</a></li>
+                <li><a href="#e3">Exercício 3</a></li>
+                <li><a href="#e5">Exercício 5</a></li>
+                <li><a href="#e6">Exercício 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="e1">
+            <h2>Exercicio 1</h2>
+            <label for="subject-input">Nome da Disciplina:</label>
+            <input id="subject-input" type="text">
+            <button onclick="updateSubject()">Enviar</button>
+        </section>
+        <section id="e2">
+            <h2>Exercicio 2</h2>
+            <p>Digite os números a serem somados:</p>
+            <form onsubmit="sum(); return false">
+                <input required id="sum1" type="number" step="0.1" placeholder="0.0">
+                <input required id="sum2" type="number" step="0.1" placeholder="0.0">
+                <input type="submit" value="Somar">
+            </form>
+        </section>
+        <section id="e3">
+            <h2>Exercicio 3</h2>
+            <p>Digite as quatro notas para descobrir se o aluno foi aprovado ou não:</p>
+            <form onsubmit="approbation(); return false">
+                <input required id="grade1" type="number" min="0" max="10" step="0.1" placeholder="0.0">
+                <input required id="grade2" type="number" min="0" max="10" step="0.1" placeholder="0.0">
+                <input required id="grade3" type="number" min="0" max="10" step="0.1" placeholder="0.0">
+                <input required id="grade4" type="number" min="0" max="10" step="0.1" placeholder="0.0">
+                <input type="submit" value="Verificar">
+            </form>
+        </section>
+        <section id="e5">
+            <h2>Exercicio 5</h2>
+            <form onsubmit="approbation(); return false">
+                <input required id="grade4" type="number" min="0" max="10" step="0.1" placeholder="0.0">
+                <input type="submit" value="Verificar">
+            </form>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
